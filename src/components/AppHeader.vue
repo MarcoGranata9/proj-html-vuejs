@@ -1,9 +1,9 @@
 <script>
+import HeaderTimer from './HeaderTimer.vue';
+
 export default {
     data() {
-        return {
-
-        }
+        return {};
     },
     methods: {
         getImgPath(imgName) {
@@ -12,12 +12,14 @@ export default {
     },
     props: {
         headerProps: Object
-    }
+    },
+    components: { HeaderTimer }
 }
 </script>
 
 <template>
     <header>
+        <HeaderTimer/>
         <div class="container">
             <div class="wrapper">
                 <div class="logo">
@@ -46,13 +48,14 @@ export default {
 @use "../style/partials/variables" as *;
 
 header { 
-    height: 100px;
     .container {
         height: 100%
     }
     .wrapper {
         @include flex(space-between, center, row);
         height: 100%;
+        font-size: 1.1rem;
+        padding: 20px 0;
         ul {
             @include flex(space-between, center, row);
             gap: 1rem;
@@ -72,7 +75,8 @@ header {
     .nav {
         a{
             @include flex(center, center, row);
-            gap: 0.3rem;        
+            gap: 0.3rem;
+            color: #3b3b3b;        
         }
         i {
             font-size: 0.5rem
@@ -82,7 +86,7 @@ header {
     .social {
         a {
             font-size: 1.2rem;
-            color: $gray-cube;
+            color: $gray-icon;
         }
     }
 }

@@ -1,3 +1,6 @@
+@use "../style/partials/mixin" as *;
+@use "../style/partials/variables" as *;
+
 * {
     margin: 0;
     padding: 0;
@@ -21,4 +24,17 @@ a {
 
 ul {
     list-style: none;
+}
+
+.btn {
+    color: $btn-text;
+    background-color: $btn-bg;
+    border: none;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    font-weight: bold;
+    &:hover {
+        cursor: pointer;
+        opacity: 70%;
+    }
 }
