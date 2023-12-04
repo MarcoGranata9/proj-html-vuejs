@@ -26,4 +26,6 @@ export default {
 <style lang="scss">
 @use "./style/general.scss";
 @import "@fortawesome/fontawesome-free/css/all.css";
+// Supports weights 400-700
+@import '@fontsource-variable/dancing-script';
 </style>

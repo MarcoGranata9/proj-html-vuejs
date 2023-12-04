@@ -57,7 +57,8 @@ export default {
 <template>
     <div class="hero">
         <div class="text">
-            <h1>Artist Coaching And Mentoring <br> Might Be For You.</h1>
+            <h1>Hello, Im Martin</h1>
+            <h2>Artist Coaching And Mentoring <br> Might Be For You.</h2>
             <button class="btn">Get started today</button>
         </div>
         <img v-for="img in imgNameHero" :src="getImgPath(img.path)" :class="img.class" alt="">
@@ -75,13 +76,22 @@ export default {
     .text{
         z-index: 5;
         h1 {
+            font-family: 'Dancing Script Variable', sans-serif;
+            color: $title-color;
+            font-size: 3.5rem;
+        }
+        h2 {
         text-align: center;
+        font-size: 2rem;
         margin-bottom: 2rem
         }
         .btn{
-            padding: 1.5rem 1.5rem
+            padding: 1rem 2rem
         }
         @include flex(center, center, column);
+        .img-text {
+            width: 400px;
+        }
     }
     
     .hero-image-01 {
