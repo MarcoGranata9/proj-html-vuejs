@@ -1,4 +1,16 @@
 <script>
+export default {
+    data() {
+        return {
+
+        }
+    },
+    methods: {
+        getImgPath(imgName) {
+            return new URL(`../assets/img/${imgName}`, import.meta.url).href;
+        }
+    }
+}
 
 </script>
 
