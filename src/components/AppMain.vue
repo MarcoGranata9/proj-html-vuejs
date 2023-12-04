@@ -1,4 +1,5 @@
 <script>
+import CoachingSection from "./CoachingSection.vue";
 import MainHero from "./MainHero.vue"
 
 export default {
@@ -12,13 +13,14 @@ export default {
             return new URL(`../assets/img/hero/${imgName}`, import.meta.url).href;
         }
     },
-    components: {MainHero},
+    components: { MainHero, CoachingSection },
 }
 </script>
 
 <template>
 <main>
     <MainHero/>
+    <CoachingSection/>
 </main>
 </template>
 
