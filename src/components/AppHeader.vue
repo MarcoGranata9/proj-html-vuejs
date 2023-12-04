@@ -3,7 +3,9 @@ import HeaderTimer from './HeaderTimer.vue';
 
 export default {
     data() {
-        return {};
+        return {
+            logoImgName: "dark-logo.png"
+        };
     },
     methods: {
         getImgPath(imgName) {
@@ -23,7 +25,7 @@ export default {
         <div class="container">
             <div class="wrapper">
                 <div class="logo">
-                    <img src="../assets/img/dark-logo.png" alt="">
+                    <img :src="getImgPath(logoImgName)" alt="">
                 </div>
                 <div class="nav">
                     <ul>
