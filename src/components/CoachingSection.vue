@@ -80,6 +80,7 @@ section {
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
+    overflow: hidden;
     h2 {
         font-family: 'Dancing Script Variable', sans-serif;
         color: $title-color;
@@ -100,8 +101,9 @@ section {
     }
     .maxcoach-shape-13 {
         position: absolute;
-        right: -50px;
-        top: 50%
+        right: -70px;
+        top: 50%;
+        z-index: -1;
     }
     .artist-shape-01{
         position: absolute;
@@ -109,6 +111,7 @@ section {
         left: -50px;
         top: 0px;
         height: 520px;
+        z-index: -1;
     }
 }
 </style>
