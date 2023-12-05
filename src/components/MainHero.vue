@@ -5,11 +5,11 @@ export default {
             imgNameHero: [
                 {
                     path: "artist-hero-image-01.jpg",
-                    class: "hero-image-01"
+                    class: "hero-image-01 shadow"
                 },
                 {
                     path: "artist-hero-image-02.jpg",
-                    class: "hero-image-02"
+                    class: "hero-image-02 shadow"
                 },
                 {
                     path: "artist-hero-image-03.png",
@@ -17,7 +17,7 @@ export default {
                 },
                 {
                     path: "artist-hero-image-04.jpg",
-                    class: "hero-image-04"
+                    class: "hero-image-04 shadow"
                 },
                 {
                     path: "artist-shape-01.png",

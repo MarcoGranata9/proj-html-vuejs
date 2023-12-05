@@ -118,7 +118,6 @@ section {
         .btn-light{
             padding: 1rem 2rem
         }
-        
     }
 }
 </style>

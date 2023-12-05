@@ -1,4 +1,5 @@
 <script>
+import BlogSection from "./BlogSection.vue";
 import CallToActionSection from "./CallToActionSection.vue";
 import CoachingSection from "./CoachingSection.vue";
 import CoursesSection from "./CoursesSection.vue";
@@ -17,7 +18,7 @@ export default {
             return new URL(`../assets/img/hero/${imgName}`, import.meta.url).href;
         }
     },
-    components: { MainHero, CoachingSection, CallToActionSection, VideoSection, TestimonialsSection, CoursesSection },
+    components: { MainHero, CoachingSection, CallToActionSection, VideoSection, TestimonialsSection, CoursesSection, BlogSection },
 }
 </script>
 
@@ -29,6 +30,7 @@ export default {
     <VideoSection/>
     <TestimonialsSection/>
     <CoursesSection/>
+    <BlogSection/>
 </main>
 </template>
 

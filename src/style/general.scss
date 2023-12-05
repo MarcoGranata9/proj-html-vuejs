@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #232323;
@@ -59,4 +63,8 @@ ul {
         color: $btn-text;
     }
 
+}
+
+.shadow {
+    filter: drop-shadow(10px 10px 15px #000);
 }
