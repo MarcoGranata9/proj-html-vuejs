@@ -41,11 +41,11 @@ export default {
     border-radius: 10px;
 
     h4 {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         line-height: 1.5rem;
     }
     p{
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         line-height: 1.5rem;
     }
     .info {
