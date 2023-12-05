@@ -2,6 +2,7 @@
 import CallToActionSection from "./CallToActionSection.vue";
 import CoachingSection from "./CoachingSection.vue";
 import MainHero from "./MainHero.vue"
+import VideoSection from "./VideoSection.vue";
 
 export default {
     data() {
@@ -14,7 +15,7 @@ export default {
             return new URL(`../assets/img/hero/${imgName}`, import.meta.url).href;
         }
     },
-    components: { MainHero, CoachingSection, CallToActionSection },
+    components: { MainHero, CoachingSection, CallToActionSection, VideoSection },
 }
 </script>
 
@@ -23,6 +24,7 @@ export default {
     <MainHero/>
     <CoachingSection/>
     <CallToActionSection/>
+    <VideoSection/>
 </main>
 </template>
 
