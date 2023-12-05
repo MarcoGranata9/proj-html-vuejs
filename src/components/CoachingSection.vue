@@ -77,6 +77,7 @@ section {
     background-image: url(../assets/img/maxcoach-shape-14.png);
     text-align: center;
     margin: 3rem 0;
+    padding: 4rem 0;
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;

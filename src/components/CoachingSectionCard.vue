@@ -31,6 +31,6 @@ export default {
 
 .card {
     line-height: 2rem;
+    text-align: left;
 }
-
 </style>
