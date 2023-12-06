@@ -50,12 +50,18 @@ export default {
 @use "../style/partials/variables" as *;
 
 header { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 140px;
+    background-color: white;
     .container {
         height: 100%
     }
     .wrapper {
         @include flex(space-between, center, row);
-        height: 100%;
         font-size: 1.1rem;
         padding: 20px 0;
         ul {

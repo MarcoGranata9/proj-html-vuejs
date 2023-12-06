@@ -70,7 +70,8 @@ export default {
 @use "../style/partials/variables" as *;
 .hero{
     position: relative;
-    min-height: 700px;  
+    min-height: 700px;
+    margin-top: 140px;  
     background-color: #fbf9f6;
     @include flex(center, center, column);
     .text{
