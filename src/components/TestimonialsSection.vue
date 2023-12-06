@@ -18,6 +18,7 @@ export default {
                     text: "I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.",
                     name: "Mina Hollace",
                     job: "Freelancer",
+                    class: "active"
                 },
                 {
                     img: "artist-testimonial-avatar-03.jpg",
@@ -86,6 +87,9 @@ section {
         i {
             margin: 0 1rem;
         }
+    }
+    .active {
+        opacity: 100%;
     }
 }
 </style>

@@ -32,6 +32,7 @@ export default {
 @use "../style/partials/variables" as *;
 .card{
     @include flex(start, center, row);
+    width: calc(50% - 20px);
     .text {
         padding: 0 2rem;
         width: 300px;

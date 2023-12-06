@@ -3,7 +3,9 @@
 export default {
     data() {
         return {
-
+            bgImg1: "maxcoach-shape-12-150x150.png",
+            bgImg2: "maxcoach-shape-14.png",
+            bgImg3: "orange_circle.svg",
         }
     },
     methods: {
@@ -67,12 +69,14 @@ export default {
             <div class="link">
                 <p>Get into detalis now? 
                     <a href="">
-                        View all posts<i class="fa-solid fa-arrow-right"></i>
+                        View all posts <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </p>
             </div>
-            
         </div>
+        <img :src="getImgPath(bgImg1)" class="dots" alt="">
+        <img :src="getImgPath(bgImg2)" class="line" alt="">
+        <img :src="getImgPath(bgImg3)" class="circle" alt="">
     </section>
 </template>
 
@@ -83,6 +87,8 @@ export default {
  section {
      background-color: #f5f7fa;
      padding: 4rem 0;
+     position: relative;
+     z-index: 1;
      .title {
          text-align: center;
 
@@ -98,9 +104,11 @@ export default {
      }
 
      .col{
-        @include flex(space-between, center, row);
+        @include flex(center, center, row);
         margin: 2rem;
         gap: 40px;
+        position: relative;
+        z-index: 1;
      }
      .card-small {
         width: 300px;
@@ -149,9 +157,41 @@ export default {
             color: gray;
             a {
                 color: $btn-bg;
-                text-decoration: underline;
-                text-decoration-color: gray;
+                font-weight: bold;
+                border-bottom: 1px solid rgb(206, 206, 206);
             }
         }
      }
- }</style>
+     .dots{
+        position: absolute;
+        z-index: 0;
+        top: 20%;
+        left: 35%;
+     }
+     .line{
+        position: absolute;
+        z-index: 0;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+     }
+     .circle{
+        position: absolute;
+        z-index: 0;
+        opacity: 30%;
+        width: 100px;
+        top: 20%;
+        left: 15%;
+     }
+     .up{
+        position: absolute;
+        top: 100px;
+        right: -120px;
+     }
+     .down{
+        position: absolute;
+        bottom: 100px;
+        left: -120px;
+     }
+ }
+ </style>

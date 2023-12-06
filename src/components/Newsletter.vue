@@ -52,6 +52,9 @@ section {
         }
         h2 {
             color: white;
+            font-size: 2rem;
+            text-align: end;
+            width: 30%;
         }
         input {
             border: none;
@@ -72,7 +75,7 @@ section {
             font-size: 2rem;
             color: white;
             position: absolute;
-            right: 0;
+            right: 20px;
             top: 50%;
             transform: translateY(-50%);
             &:hover{

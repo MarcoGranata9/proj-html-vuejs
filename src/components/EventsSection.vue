@@ -33,10 +33,16 @@ export default {
                 }
 
             ],
-
+            bgimg1: "artist-shape-02-600x324.png",
+            bgimg2: "maxcoach-shape-13.png",   
         };
     },
-    components: { EventsCard }
+    components: { EventsCard },
+    methods: {
+        getImgPath(imgName) {
+            return new URL(`../assets/img/${imgName}`, import.meta.url).href;
+        }
+    }
 }
 </script>
 
@@ -54,9 +60,9 @@ export default {
                 </div>
             </div>
         </div>
+        <img :src="getImgPath(bgimg1)" class="bg-1" alt="">
+        <img :src="getImgPath(bgimg2)" class="bg-2" alt="">
     </section>
-
-
 </template>
 
 <style scoped lang="scss">
@@ -65,6 +71,10 @@ export default {
 
 section {
     padding: 4rem 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
     .title {
         text-align: center;
         h2 {
@@ -79,7 +89,7 @@ section {
     .col {
         @include flex(space-between, center, row);
         flex-wrap: wrap;
-        gap: 50px;
+        gap: 20px;
         .reverse {
             flex-direction: row-reverse;
         }
@@ -87,6 +97,18 @@ section {
     .row{
         margin-top: 4rem;
     }
-
+    .bg-1{
+        position: absolute;
+        transform: rotate(270deg);
+        z-index: 0;
+        left: -140px;
+        bottom: 130px;
+    }
+    .bg-2 {
+        position: absolute;
+        top: 100px;
+        right: -40px;
+        z-index: 0;
+    }
 }
 </style>

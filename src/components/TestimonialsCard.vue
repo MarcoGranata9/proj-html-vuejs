@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-    <div class="card">
+    <div class="card" :class="card.class">
 
         <h4>{{ card.title }}</h4>
         <p>{{ card.text }}</p>
@@ -37,8 +37,9 @@ export default {
 @use "../style/partials/variables" as *;
 .card {
     background-color: white;
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 10px;
+    opacity: 60%;
 
     h4 {
         margin-bottom: 2rem;
@@ -46,7 +47,7 @@ export default {
     }
     p{
         margin-bottom: 2rem;
-        line-height: 1.5rem;
+        line-height: 2rem;
     }
     .info {
         @include flex(start, center, row);

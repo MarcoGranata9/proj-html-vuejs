@@ -62,9 +62,16 @@ export default {
                     students: "50 Students",
                 },
             ],
+            bgImg: "artist-shape-01-600x577.png",
         };
     },
-    components: { CoursesCard }
+    components: { CoursesCard },
+    methods:{
+        getImgPath(imgName) {
+            return new URL(`../assets/img/${imgName}`, import.meta.url).href;
+        }
+
+    }
 }
 </script>
 
@@ -84,7 +91,8 @@ export default {
         <div class="btn-container">
             <button class="btn-light">View all courses <i class="fa-solid fa-arrow-right"></i></button>
         </div>
-        
+        <img :src="getImgPath(bgImg)" class="bg-r" alt="">
+        <img :src="getImgPath(bgImg)" class="bg-l" alt="">
     </section>
 </template>
 
@@ -94,6 +102,9 @@ export default {
 
 section {
     padding: 4rem 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
     .title {
         text-align: center;
         h2 {
@@ -108,6 +119,9 @@ section {
     .row {
         @include flex(space-between, start, row);
         flex-wrap: wrap;
+        position: relative;
+        z-index: 1;
+
         .col {
             width: calc(100% / 4);
         }
@@ -118,6 +132,19 @@ section {
         .btn-light{
             padding: 1rem 2rem
         }
+    }
+    .bg-r{
+        position: absolute;
+        z-index: 0;
+        top: 10%;
+        right: -20%;
+        transform: rotate(270deg);
+    }
+    .bg-l{
+        position: absolute;
+        z-index: 0;
+        bottom: 20%;
+        left: -20%;
     }
 }
 </style>
