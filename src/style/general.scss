@@ -23,7 +23,7 @@ body {
 }
 
 .container-m {
-    width: 70%;
+    width: 65%;
     max-width: 1400px;
     margin: 0 auto;    
 }
@@ -66,5 +66,5 @@ ul {
 }
 
 .shadow {
-    filter: drop-shadow(10px 10px 15px #000);
+    filter: drop-shadow(10px 10px 15px rgba(0,0,0, 0.5));
 }
