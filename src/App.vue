@@ -10,6 +10,12 @@ export default {
                 navArray: ["Home", "Pages", "Courses", "Features", "Blog", "Shop"],
                 socialArray: ['<i class="fa-brands fa-twitter"></i>', '<i class="fa-brands fa-facebook-f"></i>', '<i class="fa-brands fa-instagram"></i>','<i class="fa-brands fa-linkedin"></i>',],
             },
+            footerProps: {
+                socialArray: ['<i class="fa-brands fa-twitter"></i>', '<i class="fa-brands fa-facebook-f"></i>', '<i class="fa-brands fa-instagram"></i>','<i class="fa-brands fa-linkedin"></i>',],
+                explore: ["Start here", "Success story", "Blog", "Contact Us"],
+                info: ["Membership", "Purchase guide", "Privacy policy", "Terms of services"],
+                instagram: ["footer-img-1.jpg", "footer-img-2.jpg", "footer-img-3.jpg"]
+            }
         } 
     },
     components: { AppHeader, AppMain, AppFooter },
@@ -20,7 +26,7 @@ export default {
 <template>
 <AppHeader :headerProps="headerProps"/>
 <AppMain/>
-<AppFooter/>
+<AppFooter :footerProps="footerProps"/>
 </template>
 
 <style lang="scss">
