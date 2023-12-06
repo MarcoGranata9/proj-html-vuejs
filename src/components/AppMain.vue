@@ -6,6 +6,7 @@ import CoursesSection from "./CoursesSection.vue";
 import EventsSection from "./EventsSection.vue";
 import MainHero from "./MainHero.vue"
 import Newsletter from "./Newsletter.vue";
+import Sidebar from "./Sidebar.vue";
 import TestimonialsSection from "./TestimonialsSection.vue";
 import VideoSection from "./VideoSection.vue";
 
@@ -20,7 +21,7 @@ export default {
             return new URL(`../assets/img/hero/${imgName}`, import.meta.url).href;
         }
     },
-    components: { MainHero, CoachingSection, CallToActionSection, VideoSection, TestimonialsSection, CoursesSection, BlogSection, EventsSection, Newsletter },
+    components: { MainHero, CoachingSection, CallToActionSection, VideoSection, TestimonialsSection, CoursesSection, BlogSection, EventsSection, Newsletter, Sidebar },
 }
 </script>
 
@@ -35,6 +36,7 @@ export default {
     <BlogSection/>
     <EventsSection/>
     <Newsletter/>
+    <Sidebar/>
 </main>
 </template>
 
