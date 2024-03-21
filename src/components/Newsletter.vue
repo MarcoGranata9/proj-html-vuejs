@@ -55,6 +55,7 @@ section {
             font-size: 2rem;
             text-align: end;
             width: 30%;
+            font-weight: normal;
         }
         input {
             border: none;
@@ -63,6 +64,7 @@ section {
             padding: 1rem;
             font-size: 1.5rem;
             width: 100%;
+            color: white;
             &::placeholder{
                 color: white;
             }
